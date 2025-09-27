@@ -31,7 +31,7 @@ function App() {
       <div className=" mx-auto  flex flex-col gap-6 px-4 lg:px-0">
         <div className="bg-white rounded-xl shadow p-4 ">
         <h1 className="flex items-center font-bold text-white justify-center text-xl gap-4 rounded bg-gradient-to-r from-blue-500 via-purple-600 to-blue-300  text-2xl font-[700] text-[#333399]">
-          <img src="../public/logo.png" className="w-8 h-8 aspect-square rounded-full"></img>
+          <img src="logo.png" className="w-8 h-8 aspect-square rounded-full"></img>
           <span>Smart Expense 📈</span>
         </h1>
         </div>
