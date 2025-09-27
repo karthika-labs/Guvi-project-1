@@ -42,7 +42,7 @@ function Add({ handleAdd }) {
       {toast && (
         <div
           id="toast-top-right"
-          class="fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500  divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg  left-1 top-2/13 sm:left-1 top-2/13  lg:top-1 left-1 dark:text-gray-400 "
+          class="fixed flex items-center w-full max-w-xs p-4 space-x-4 text-gray-500  divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg  left-1 top-11 lg:top-1 left-1 dark:text-gray-400 "
           role="alert"
         >
           <div
@@ -158,7 +158,7 @@ function Add({ handleAdd }) {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mt-4">
           <button
             type="submit"
-            className="w-full bg-[#66a3ff] text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition font-medium text-sm sm:text-base"
+            className="w-full  cursor-pointer bg-[#66a3ff] text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition font-medium text-sm sm:text-base"
           >
             ➕ Add Expense
           </button>
@@ -167,7 +167,7 @@ function Add({ handleAdd }) {
             onClick={() => formik.resetForm()}
             className="bg-gray-300 flex items-center justify-center cursor-pointer text-white px-4 py-2 transition duration-300 hover:scale-105 rounded"
           >
-            <span className="transition duration-300 hover:scale-110 hover:text-rose-600  text-red-400">
+            <span className="transition cursor-pointer duration-300 hover:scale-110 hover:text-rose-600  text-red-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -174,7 +174,7 @@ function Edit({ updateData }) {
             <button
               type="button"
               onClick={() => setIsEditing(true)}
-              className="text-blue-500 hover:text-blue-700 transition"
+              className="text-blue-500 cursor-pointer hover:text-blue-700 transition"
             >
               <FaEdit />
             </button>

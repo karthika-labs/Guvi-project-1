@@ -62,13 +62,13 @@ function ChartCategory({ totalPerCategory }) {
       title: {
         display: true,
         text: "Expenses by Category - Pie",
-        color: "#a0a0a0", // dark gray
+        color: "#a0a0a0", 
         font: { size: 18, weight: "600" },
       },
       tooltip: {
         titleColor: "#1f2937",
         bodyColor: "#111827",
-        backgroundColor: "#f3f4f6", // light gray background
+        backgroundColor: "#f3f4f6", 
       },
     },
     animation: {

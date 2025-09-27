@@ -30,25 +30,25 @@ function Delete({ id }) {
     <div className="relative">
       <button
         onClick={() => setConfirm(true)}
-        className="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded-full transition flex items-center justify-center"
+        className="bg-red-500 cursor-pointer hover:bg-red-600 text-white px-2 py-1 rounded-full transition flex items-center justify-center"
         title="Delete"
       >
         <FaTrash size={14} />
       </button>
 
       {confirm && (
-        <div className="absolute right-0 -mb-2  p-4 w-48 bg-white shadow-lg rounded-lg flex flex-col gap-2 z-10">
+        <div className="absolute right-0 -top-25 flex -wrap -mb-2  p-4 w-70 bg-white shadow-lg rounded-lg flex flex-col gap-2 z-10">
           <p className="text-sm text-gray-700">Are you sure you want to delete?</p>
           <div className="flex justify-end gap-2">
             <button
               onClick={handleDelete}
-              className="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm"
+              className=" cursor-pointer bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded text-sm"
             >
               Yes
             </button>
             <button
               onClick={() => setConfirm(false)}
-              className="bg-gray-300 hover:bg-gray-400 text-gray-700 px-3 py-1 rounded text-sm"
+              className="bg-gray-300 cursor-pointer hover:bg-gray-400 text-gray-700 px-3 py-1 rounded text-sm"
             >
               No
             </button>

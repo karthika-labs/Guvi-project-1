@@ -34,6 +34,7 @@ function View({ showOnly }) {
     Bills: "from-yellow-400 to-yellow-600",
     Others: "from-purple-400 to-purple-600",
   };
+  const predefinedCategories = ["Food", "Travel", "Bills", "Others"];
 
   // Calculate totals and per-category totals
   useEffect(() => {
@@ -42,9 +43,9 @@ function View({ showOnly }) {
       0
     );
     setTotal(sum);
-
+   
     const categoryTotals = filteredData.reduce((acc, item) => {
-      const cat = item.Category || "Others";
+      const cat = predefinedCategories.includes(item.Category) ? item.Category : "Others";
       if (!acc[cat]) acc[cat] = 0;
       acc[cat] += parseInt(item.amount);
       return acc;
@@ -137,7 +138,7 @@ function View({ showOnly }) {
                 <Sort />
                 <button
                   onClick={() => setFilterVisible(!filterVisible)}
-                  className="bg-gradient-to-r from-blue-400 to-indigo-600 hover:from-indigo-600 hover:to-blue-400
+                  className=" cursor-pointer bg-gradient-to-r from-blue-400 to-indigo-600 hover:from-indigo-600 hover:to-blue-400
              text-white px-4 py-2 rounded-lg shadow-lg transition-all duration-300
              flex items-center gap-2 font-semibold text-sm w-full"
                 >
